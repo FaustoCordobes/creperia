@@ -339,6 +339,10 @@
   footer{background:var(--cream);padding:36px 0;border-top:1px solid var(--line);}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
   footer p{font-size:0.82rem;color:rgba(43,27,16,0.55);margin:0;}
+  footer .credit{font-size:0.82rem;color:rgba(43,27,16,0.7);text-decoration:none;text-align:right;margin-left:auto;max-width:340px;line-height:1.4;}
+  footer .credit strong{color:var(--cherry);font-weight:600;text-decoration:underline;text-underline-offset:3px;}
+  footer .credit:hover strong{color:var(--cherry-dark);}
+  @media (max-width:640px){footer .credit{text-align:left;margin-left:0;}}
 
   @media (max-width:880px){
     .hero .wrap{grid-template-columns:1fr;}
@@ -666,6 +670,7 @@
   <div class="wrap">
     <p>© <span id="year"></span> Creperia Lo de Luis · Av. San Martín 866, San Martín de los Andes</p>
     <p>Hecho con 🥞 en la Patagonia</p>
+    <a class="credit" href="https://f-cwebstudio.vercel.app/" target="_blank" rel="noopener">¿Le gustó la página y quiere una para su local o emprendimiento? <strong>Haga clic aquí</strong></a>
   </div>
 </footer>
 
